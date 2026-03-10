@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+        
+        <div class="first_row">
+            <div class="display">
+                <input type="text" id="result" placeholder="0" readonly aria-label="Display da calculadora">
+            </div>
+            <button class="clear" onclick="clearResult()">C</button>
+        </div>
+
+        <div class="second_row">
+            <button onclick="addNumber('1')">1</button>
+            <button onclick="addNumber('2')">2</button>
+            <button onclick="addNumber('3')">3</button>
+            <button onclick="addOperator('+')">+</button>
+        </div>
+
+        <div class="third_row">
+            <button onclick="addNumber('4')">4</button>
+            <button onclick="addNumber('5')">5</button>
+            <button onclick="addNumber('6')">6</button>
+            <button onclick="addOperator('-')">-</button>
+        </div>
+
+        <div class="fourth_row">
+            <button onclick="addNumber('7')">7</button>
+            <button onclick="addNumber('8')">8</button>
+            <button onclick="addNumber('9')">9</button>
+            <button onclick="addOperator('*')">x</button>
+        </div>
+
+        <div class="fifth_row">
+            <button onclick="addOperator('/')">/</button>
+            <button onclick="addNumber('0')">0</button>
+            <button onclick="addNumber('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
